@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Escritório | Alves Magalhães Advogados</title>
+    <meta name="description" content="Conheça o escritório Alves Magalhães Advogados — nossa história, missão, valores e equipe de especialistas em São Paulo desde 2005.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A1426',
+                            primary: '#13233F',
+                            gold: '#C5A880',
+                            goldHover: '#B0936A',
+                            lightBg: '#F8F9FA',
+                            grayText: '#5A6473'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .page-hero {
+            background-image:
+                linear-gradient(to bottom, rgba(10,20,38,0.65) 0%, rgba(10,20,38,0.90) 100%),
+                url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=85&w=2400&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .team-card { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .team-card:hover { transform: translateY(-8px); }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .anim { animation: fadeUp 0.7s ease both; }
+        .anim-1 { animation-delay: 0.1s; opacity: 0; }
+        .anim-2 { animation-delay: 0.3s; opacity: 0; }
+        .anim-3 { animation-delay: 0.5s; opacity: 0; }
+        .value-card { transition: all 0.35s ease; }
+        .value-card:hover { background: #13233F; }
+        .value-card:hover h3, .value-card:hover p { color: white !important; }
+        .value-card:hover .icon-box { background: rgba(197,168,128,0.2); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white selection:bg-brand-gold selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-brand-dark/95 backdrop-blur-sm text-white fixed w-full z-50 border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                    <div class="w-12 h-12 flex items-center justify-center font-heading font-bold text-xl border border-brand-gold text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-500">AM</div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-semibold text-lg tracking-wide">Alves Magalhães</span>
+                        <span class="text-[10px] tracking-[0.35em] text-brand-gold uppercase font-medium">Advogados</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Home</a>
+                    <a href="atuacao.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Atuação</a>
+                    <a href="condominios.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Condomínios</a>
+                    <a href="escritorio.html" class="text-brand-gold border-b border-brand-gold pb-1">O Escritório</a>
+                    <a href="contato.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Contato</a>
+                </div>
+                <div class="hidden lg:flex items-center">
+                    <a href="tel:1152000494" class="flex items-center gap-3 text-sm font-semibold tracking-wider hover:text-brand-gold transition-colors duration-300 border border-white/20 px-5 py-2 hover:border-brand-gold">
+                        <i class="fa-solid fa-phone text-brand-gold"></i>11 5200-0494
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-brand-gold focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero w-full relative flex items-end pt-24" style="min-height: 46vh;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pb-16">
+            <div class="anim anim-1 flex items-center gap-4 mb-5">
+                <div class="w-12 h-[1px] bg-brand-gold"></div>
+                <span class="text-brand-gold uppercase tracking-[0.3em] text-xs font-semibold">Tradição e Excelência</span>
+            </div>
+            <h1 class="anim anim-2 text-5xl md:text-6xl font-heading font-medium text-white leading-tight mb-4">
+                O<br><em class="not-italic text-brand-gold">Escritório</em>
+            </h1>
+            <p class="anim anim-3 text-gray-300 text-lg font-light max-w-2xl">
+                Mais de 20 anos de história, construídos sobre ética, excelência técnica e compromisso inabalável com nossos clientes.
+            </p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-1 bg-brand-gold/30"></div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="bg-brand-lightBg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center gap-2 text-xs text-gray-400 tracking-wider uppercase font-medium">
+                <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
+                <i class="fa-solid fa-chevron-right text-[9px]"></i>
+                <span class="text-brand-gold">O Escritório</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HISTÓRIA -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="w-full lg:w-1/2 lg:pr-12">
+                    <div class="inline-flex items-center gap-3 mb-8 bg-brand-gold/10 border border-brand-gold/30 px-4 py-2 rounded-full">
+                        <i class="fa-solid fa-landmark text-brand-gold text-sm"></i>
+                        <span class="text-brand-gold font-semibold tracking-[0.2em] text-xs uppercase">Nossa História</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-heading font-medium text-brand-dark leading-tight mb-6 border-l-4 border-brand-gold pl-6">
+                        Dois décadas de advocacia com propósito.
+                    </h2>
+                    <p class="text-brand-grayText font-light leading-relaxed mb-6 text-lg">
+                        Fundado em 2005 pelos sócios Dr. Ricardo Alves e Dr. Paulo Magalhães, o escritório nasceu com a missão de oferecer advocacia de alto padrão com atendimento humanizado. O que começou como uma pequena sociedade tornou-se referência em direito trabalhista e empresarial em São Paulo.
+                    </p>
+                    <p class="text-brand-grayText font-light leading-relaxed mb-6">
+                        Ao longo dos anos, expandimos nossa atuação para novas especialidades, sempre mantendo o rigor técnico e a proximidade com o cliente como pilares inegociáveis. Hoje, somos um escritório completo com mais de 25 advogados especializados e presença consolidada no mercado jurídico paulista.
+                    </p>
+                    <p class="text-brand-grayText font-light leading-relaxed">
+                        Nossa trajetória é marcada por casos emblemáticos, parcerias estratégicas e, acima de tudo, pela confiança de milhares de clientes que depositaram em nós a responsabilidade de proteger seus interesses mais importantes.
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute -top-5 -right-5 w-[80%] h-[80%] border-2 border-brand-gold/30 hidden md:block z-0"></div>
+                    <div class="relative z-10 overflow-hidden shadow-2xl aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1577415124269-fc1140354980?q=85&w=1200&auto=format&fit=crop" alt="Interior do escritório Alves Magalhães" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-brand-dark border border-brand-gold/30 text-white p-6 shadow-xl hidden md:flex gap-6 z-20">
+                        <div class="text-center pr-6 border-r border-white/10">
+                            <span class="font-heading font-bold text-3xl text-brand-gold">2005</span>
+                            <p class="text-[10px] tracking-widest uppercase text-gray-400 mt-1">Fundação</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="font-heading font-bold text-3xl text-brand-gold">SP</span>
+                            <p class="text-[10px] tracking-widest uppercase text-gray-400 mt-1">Barra Funda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+    <section class="py-24 bg-brand-lightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-medium tracking-widest text-xs uppercase block mb-3">Propósito</span>
+                <h2 class="text-4xl md:text-5xl font-heading font-medium text-brand-dark">Missão, Visão e Valores</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="value-card bg-white border border-gray-100 p-10 cursor-default">
+                    <div class="icon-box w-14 h-14 flex items-center justify-center bg-brand-gold/10 text-brand-gold rounded mb-6 transition-all duration-300">
+                        <i class="fa-solid fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-brand-dark mb-4 transition-colors duration-300">Missão</h3>
+                    <p class="text-brand-grayText font-light leading-relaxed transition-colors duration-300">Oferecer serviços jurídicos de excelência, com expertise técnica e comprometimento ético, assegurando a máxima proteção dos direitos e interesses de nossos clientes em cada caso.</p>
+                </div>
+                <div class="value-card bg-brand-primary border border-brand-primary p-10 cursor-default">
+                    <div class="icon-box w-14 h-14 flex items-center justify-center bg-white/10 text-brand-gold rounded mb-6 transition-all duration-300">
+                        <i class="fa-solid fa-eye text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-white mb-4">Visão</h3>
+                    <p class="text-gray-300 font-light leading-relaxed">Ser reconhecido como o escritório de advocacia de referência em São Paulo pela qualidade do serviço prestado, pela inovação na gestão jurídica e pela construção de relações sólidas e duradouras com nossos clientes.</p>
+                </div>
+                <div class="value-card bg-white border border-gray-100 p-10 cursor-default">
+                    <div class="icon-box w-14 h-14 flex items-center justify-center bg-brand-gold/10 text-brand-gold rounded mb-6 transition-all duration-300">
+                        <i class="fa-solid fa-gem text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold text-brand-dark mb-4 transition-colors duration-300">Valores</h3>
+                    <p class="text-brand-grayText font-light leading-relaxed transition-colors duration-300">Ética e integridade em todas as ações. Excelência técnica constante. Transparência com clientes e parceiros. Empatia e humanização no atendimento. Inovação como ferramenta de evolução.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="flex flex-col lg:flex-row w-full bg-brand-dark">
+        <div class="w-full lg:w-[45%] text-white p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-[0.02] rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+            <div class="max-w-md ml-auto lg:mr-0 mr-auto relative z-10">
+                <div class="flex items-center gap-4 text-brand-gold font-medium tracking-widest text-xs mb-8 uppercase">
+                    <span>Em números</span>
+                    <div class="w-16 h-[1px] bg-brand-gold"></div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-heading font-medium leading-[1.2] mb-6">
+                    Resultados que <em class="italic text-brand-gold">falam</em> por si mesmos.
+                </h2>
+                <p class="text-gray-400 font-light leading-relaxed">
+                    Construímos nossa reputação caso a caso, cliente a cliente. Cada número representa uma pessoa ou empresa que confiou em nós — e saiu satisfeita.
+                </p>
+            </div>
+        </div>
+        <div class="w-full lg:w-[55%] bg-brand-primary p-12 lg:p-24 flex flex-col justify-center border-l border-white/5">
+            <div class="max-w-2xl mx-auto grid grid-cols-2 gap-y-16 gap-x-12 text-center">
+                <div class="flex flex-col items-center">
+                    <span class="text-5xl lg:text-6xl font-heading font-semibold text-brand-gold mb-3">25<span class="text-2xl font-sans font-light">+</span></span>
+                    <div class="w-8 h-[2px] bg-white/20 mb-4"></div>
+                    <span class="text-xs font-semibold tracking-widest text-gray-300 uppercase">Advogados Especialistas</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-5xl lg:text-6xl font-heading font-semibold text-brand-gold mb-3">632</span>
+                    <div class="w-8 h-[2px] bg-white/20 mb-4"></div>
+                    <span class="text-xs font-semibold tracking-widest text-gray-300 uppercase">Casos Resolvidos</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-5xl lg:text-6xl font-heading font-semibold text-brand-gold mb-3">45</span>
+                    <div class="w-8 h-[2px] bg-white/20 mb-4"></div>
+                    <span class="text-xs font-semibold tracking-widest text-gray-300 uppercase">Parceiros de Negócios</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="text-5xl lg:text-6xl font-heading font-semibold text-brand-gold mb-3">10<span class="text-2xl font-sans font-light">k+</span></span>
+                    <div class="w-8 h-[2px] bg-white/20 mb-4"></div>
+                    <span class="text-xs font-semibold tracking-widest text-gray-300 uppercase">Clientes Atendidos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-gold font-medium tracking-widest text-xs uppercase block mb-3">Nossos Profissionais</span>
+                <h2 class="text-4xl md:text-5xl font-heading font-medium text-brand-dark">Conheça nossa equipe</h2>
+                <p class="text-brand-grayText font-light text-lg mt-4 max-w-2xl mx-auto">Advogados dedicados, com formação de excelência e comprometidos com o melhor resultado para cada cliente.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Sócio 1 -->
+                <div class="team-card group cursor-pointer">
+                    <div class="relative overflow-hidden mb-6">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=85&w=600&auto=format&fit=crop&crop=face" alt="Dr. Ricardo Alves" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-brand-gold text-white text-[9px] tracking-widest uppercase font-semibold px-3 py-1">Sócio Fundador</div>
+                    </div>
+                    <h3 class="font-heading font-semibold text-brand-dark text-xl mb-1 group-hover:text-brand-gold transition-colors">Dr. Ricardo Alves</h3>
+                    <p class="text-brand-gold text-xs font-semibold tracking-widest uppercase mb-2">Direito Trabalhista</p>
+                    <p class="text-brand-grayText text-sm font-light">OAB/SP 45.892 · Mestre em Direito do Trabalho pela USP</p>
+                </div>
+
+                <!-- Sócio 2 -->
+                <div class="team-card group cursor-pointer">
+                    <div class="relative overflow-hidden mb-6">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=85&w=600&auto=format&fit=crop&crop=face" alt="Dr. Paulo Magalhães" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-brand-gold text-white text-[9px] tracking-widest uppercase font-semibold px-3 py-1">Sócio Fundador</div>
+                    </div>
+                    <h3 class="font-heading font-semibold text-brand-dark text-xl mb-1 group-hover:text-brand-gold transition-colors">Dr. Paulo Magalhães</h3>
+                    <p class="text-brand-gold text-xs font-semibold tracking-widest uppercase mb-2">Direito Empresarial</p>
+                    <p class="text-brand-grayText text-sm font-light">OAB/SP 51.203 · Especialista em Direito Societário pela FGV</p>
+                </div>
+
+                <!-- Advogada 3 -->
+                <div class="team-card group cursor-pointer">
+                    <div class="relative overflow-hidden mb-6">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=85&w=600&auto=format&fit=crop&crop=face" alt="Dra. Ana Carolina Lima" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-brand-primary border border-brand-gold/30 text-white text-[9px] tracking-widest uppercase font-semibold px-3 py-1">Sócia</div>
+                    </div>
+                    <h3 class="font-heading font-semibold text-brand-dark text-xl mb-1 group-hover:text-brand-gold transition-colors">Dra. Ana Carolina Lima</h3>
+                    <p class="text-brand-gold text-xs font-semibold tracking-widest uppercase mb-2">Direito de Família</p>
+                    <p class="text-brand-grayText text-sm font-light">OAB/SP 67.441 · Especialista em Direito de Família e Sucessões</p>
+                </div>
+
+                <!-- Advogado 4 -->
+                <div class="team-card group cursor-pointer">
+                    <div class="relative overflow-hidden mb-6">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=85&w=600&auto=format&fit=crop&crop=face" alt="Dr. Fernando Costa" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                            <div class="flex gap-3">
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="w-8 h-8 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white hover:bg-brand-gold transition-colors text-sm"><i class="fa-regular fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-brand-primary border border-brand-gold/30 text-white text-[9px] tracking-widest uppercase font-semibold px-3 py-1">Associado Sênior</div>
+                    </div>
+                    <h3 class="font-heading font-semibold text-brand-dark text-xl mb-1 group-hover:text-brand-gold transition-colors">Dr. Fernando Costa</h3>
+                    <p class="text-brand-gold text-xs font-semibold tracking-widest uppercase mb-2">Direito Imobiliário</p>
+                    <p class="text-brand-grayText text-sm font-light">OAB/SP 88.712 · Especialista em Direito Imobiliário e Registro</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTO -->
+    <section class="py-20 bg-brand-lightBg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <i class="fa-solid fa-quote-right text-5xl text-brand-gold/30 mb-8 block"></i>
+            <p class="text-3xl md:text-4xl font-heading italic text-brand-dark leading-relaxed mb-10">
+                "A excelência não é um ato, mas um hábito. No Alves Magalhães, cada detalhe do nosso trabalho é um reflexo do compromisso com nossos clientes."
+            </p>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-[2px] bg-brand-gold mb-4"></div>
+                <p class="font-bold text-brand-dark tracking-wider uppercase text-sm mb-1">Dr. Ricardo Alves</p>
+                <p class="text-brand-gold text-xs font-medium tracking-widest uppercase">Sócio Fundador</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-brand-dark py-20 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <p class="text-brand-gold uppercase tracking-[0.3em] text-xs font-semibold mb-4">Vamos conversar?</p>
+            <h2 class="text-4xl md:text-5xl font-heading font-medium text-white leading-tight mb-6">
+                Pronto para contar com<br><em class="not-italic text-brand-gold">nossa experiência?</em>
+            </h2>
+            <p class="text-gray-400 font-light text-lg mb-10 max-w-2xl mx-auto">
+                Agende uma consulta e descubra como podemos ajudar você com a solução jurídica mais adequada para o seu caso.
+            </p>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <a href="contato.html" class="inline-flex items-center gap-3 bg-brand-gold text-white px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:bg-brand-goldHover transition-colors duration-300 shadow-lg shadow-brand-gold/20">
+                    Agendar Consulta <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="tel:1152000494" class="inline-flex items-center gap-3 border border-white/30 text-white px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:border-brand-gold hover:text-brand-gold transition-all duration-300">
+                    <i class="fa-solid fa-phone text-brand-gold"></i> 11 5200-0494
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-300 pt-20 pb-10 border-t-4 border-brand-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:pr-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-10 h-10 flex items-center justify-center font-heading font-bold text-lg border border-brand-gold text-brand-gold">AM</div>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-semibold text-white tracking-wide">Alves Magalhães</span>
+                            <span class="text-[9px] tracking-[0.3em] text-gray-400 uppercase">Advogados</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light mb-8 leading-relaxed">Assessoria jurídica estratégica pautada na ética, técnica e excelência.</p>
+                    <div class="flex items-start gap-4 text-sm font-light">
+                        <i class="fa-solid fa-location-dot mt-1 text-brand-gold"></i>
+                        <p class="leading-relaxed">Av. Marquês de São Vicente, 230<br>18º andar - Barra Funda<br>São Paulo, SP</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Áreas de Atuação</h4>
+                    <ul class="space-y-4 text-sm font-light text-gray-400">
+                        <li><a href="atuacao.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito do Trabalho</a></li>
+                        <li><a href="atuacao.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito Previdenciário</a></li>
+                        <li><a href="atuacao.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Empresas e Corporações</a></li>
+                        <li><a href="atuacao.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Família e Sucessões</a></li>
+                        <li><a href="condominios.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Condomínios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Escritório</h4>
+                    <ul class="space-y-4 text-sm font-light text-gray-400">
+                        <li><a href="escritorio.html" class="hover:text-brand-gold transition-colors">Sobre Nós</a></li>
+                        <li><a href="escritorio.html" class="hover:text-brand-gold transition-colors">Nossa Equipe</a></li>
+                        <li><a href="contato.html" class="hover:text-brand-gold transition-colors">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Contato</h4>
+                    <a href="tel:1152000494" class="group flex items-center bg-white/5 border border-white/10 hover:border-brand-gold transition-all duration-300 mb-6">
+                        <div class="bg-brand-gold text-white p-4 flex items-center justify-center"><i class="fa-solid fa-phone"></i></div>
+                        <span class="px-5 py-3 text-white font-semibold tracking-wider group-hover:text-brand-gold transition-colors">11 5200-0494</span>
+                    </a>
+                    <div class="flex items-center gap-4 text-sm font-light text-gray-400 mb-8">
+                        <i class="fa-regular fa-envelope text-brand-gold text-lg"></i>
+                        <a href="mailto:contato@alvesmagalhaes.com.br" class="hover:text-white transition-colors break-all">contato@alvesmagalhaes.com.br</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light text-gray-500">
+                <p>Copyright © 2024 Alves Magalhães Advogados. Todos os direitos reservados.</p>
+                <p>OAB/SP 123.456</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

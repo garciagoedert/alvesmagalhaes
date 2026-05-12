@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso | Alves Magalhães Advogados</title>
+    <meta name="description" content="Termos de Uso do website Alves Magalhães Advogados. Conheça as condições de uso dos nossos serviços e informações.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A1426',
+                            primary: '#13233F',
+                            gold: '#C5A880',
+                            goldHover: '#B0936A',
+                            lightBg: '#F8F9FA',
+                            grayText: '#5A6473'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .page-hero {
+            background-image:
+                linear-gradient(to bottom, rgba(10,20,38,0.72) 0%, rgba(10,20,38,0.90) 100%),
+                url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=85&w=2400&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .prose h2 { 
+            font-family: 'Playfair Display', serif;
+            color: #0A1426;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .prose h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background-color: #C5A880;
+            display: block;
+        }
+        .prose p {
+            color: #5A6473;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        .prose ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+        .prose li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: #5A6473;
+            font-weight: 300;
+        }
+        .prose li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #C5A880;
+            font-size: 0.8rem;
+            top: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white selection:bg-brand-gold selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-brand-dark/95 backdrop-blur-sm text-white fixed w-full z-50 border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                    <div class="w-12 h-12 flex items-center justify-center font-heading font-bold text-xl border border-brand-gold text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-500">AM</div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-semibold text-lg tracking-wide">Alves Magalhães</span>
+                        <span class="text-[10px] tracking-[0.35em] text-brand-gold uppercase font-medium">Advogados</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Home</a>
+                    <a href="atuacao.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Atuação</a>
+                    <a href="condominios.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Condomínios</a>
+                    <a href="escritorio.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">O Escritório</a>
+                    <a href="contato.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand-gold focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero w-full relative flex items-end pt-24" style="min-height: 40vh;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pb-16 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start gap-4 mb-5">
+                <div class="w-12 h-[1px] bg-brand-gold"></div>
+                <span class="text-brand-gold uppercase tracking-[0.3em] text-xs font-semibold">Diretrizes de Uso</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-heading font-medium text-white leading-tight mb-4">
+                Termos de<br><em class="not-italic text-brand-gold">Uso</em>
+            </h1>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose max-w-none">
+                
+                <h2>Termos de uso do website www.alvesmagalhaes.com.br</h2>
+                <p>Apresentamos um panorama sobre as principais questões das ações trabalhistas, com a finalidade de levar conhecimento acerca desse assunto ao trabalhador na iminência de mover um processo contra o seu empregador ou da empresa/empregador defender-se de uma causa trabalhista movida por um funcionário. Prestamos assessoria preventiva e contenciosa em geral, abrangendo, especificamente, as seguintes atividades:</p>
+                
+                <ul>
+                    <li>Ações Trabalhistas;</li>
+                    <li>Assessoria e representação em processos judiciais;</li>
+                    <li>Elaboração de contratos individuais e coletivos de trabalho, opiniões legais, pareceres e elaboração de documentos jurídicos;</li>
+                    <li>Ações Rescisórias;</li>
+                    <li>Orientação sobre CLT;</li>
+                    <li>Reversão de dispensas por justa causa;</li>
+                    <li>Contingência trabalhista e análise de riscos;</li>
+                    <li>Negociação coletiva e dissídios coletivos;</li>
+                    <li>Fiscalização e multas trabalhistas e execução fiscal;</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-300 pt-20 pb-10 border-t-4 border-brand-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:pr-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-10 h-10 flex items-center justify-center font-heading font-bold text-lg border border-brand-gold text-brand-gold">AM</div>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-semibold text-white tracking-wide">Alves Magalhães</span>
+                            <span class="text-[9px] tracking-[0.3em] text-gray-400 uppercase">Advogados</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light mb-8 leading-relaxed">Assessoria jurídica estratégica pautada na ética, técnica e excelência.</p>
+                    <div class="flex items-start gap-4 text-sm font-light">
+                        <i class="fa-solid fa-location-dot mt-1 text-brand-gold"></i>
+                        <p class="leading-relaxed">Rua do Bosque, 1484<br>3º andar, sala 312 - Barra Funda<br>São Paulo - SP</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Áreas de Atuação</h4>
+                    <ul class="space-y-4 text-sm font-light text-gray-400">
+                        <li><a href="direito-do-trabalho.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito do Trabalho</a></li>
+                        <li><a href="direito-previdenciario.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito Previdenciário</a></li>
+                        <li><a href="empresas-e-corporacoes.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Empresas e Corporações</a></li>
+                        <li><a href="direito-imobiliario.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito Imobiliário</a></li>
+                        <li><a href="direito-de-familia-e-sucessoes.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Família e Sucessões</a></li>
+                        <li><a href="condominios.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Condomínios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Escritório</h4>
+                    <ul class="space-y-4 text-sm font-light text-gray-400">
+                        <li><a href="escritorio.html" class="hover:text-brand-gold transition-colors">Sobre Nós</a></li>
+                        <li><a href="escritorio.html" class="hover:text-brand-gold transition-colors">Nossa Equipe</a></li>
+                        <li><a href="contato.html" class="hover:text-brand-gold transition-colors">Trabalhe Conosco</a></li>
+                        <li class="pt-4 mt-4 border-t border-white/10"><a href="politica-de-privacidade.html" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+                        <li><a href="termos-de-uso.html" class="text-white">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Contato</h4>
+                    <a href="https://wa.me/551152000494" target="_blank" class="group flex items-center bg-white/5 border border-white/10 hover:border-brand-gold transition-all duration-300 mb-6">
+                        <div class="bg-brand-gold text-white p-4 flex items-center justify-center"><i class="fa-brands fa-whatsapp text-xl"></i></div>
+                        <span class="px-5 py-3 text-white font-semibold tracking-wider group-hover:text-brand-gold transition-colors">+55 11 5200-0494</span>
+                    </a>
+                    <div class="flex items-center gap-4 text-sm font-light text-gray-400 mb-8">
+                        <i class="fa-regular fa-envelope text-brand-gold text-lg"></i>
+                        <a href="mailto:contato@alvesmagalhaes.com.br" class="hover:text-white transition-colors break-all">contato@alvesmagalhaes.com.br</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/alves-magalh%C3%A3es-advogados?originalSubdomain=br" target="_blank" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/alvesmagalhaesadv?igsh=ZWRtNGIwd2Y0bW9u" target="_blank" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light text-gray-500">
+                <p>Copyright © 2024 Alves Magalhães Advogados. Todos os direitos reservados.</p>
+                <p>OAB/SP 123.456</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#0A1426] z-[100] flex flex-col items-center justify-center transition-all duration-500 opacity-0 invisible pointer-events-none backdrop-blur-md">
+        <!-- Close Button -->
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-brand-gold transition-colors p-4">
+            <i class="fas fa-times text-3xl"></i>
+        </button>
+
+        <!-- Logo -->
+        <div class="mb-16 flex flex-col items-center gap-3 opacity-0 translate-y-4 transition-all duration-700" id="menu-logo">
+            <div class="w-14 h-14 flex items-center justify-center font-heading font-bold text-2xl border border-brand-gold text-brand-gold">
+                AM
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="font-heading font-semibold text-white text-lg tracking-widest uppercase">Alves Magalhães</span>
+                <span class="text-[9px] tracking-[0.4em] text-brand-gold uppercase font-medium">Advogados</span>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-col items-center gap-8 text-xl font-heading tracking-[0.25em] uppercase text-white">
+            <a href="index.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold">Home</a>
+            <a href="atuacao.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold" style="transition-delay: 100ms;">Atuação</a>
+            <a href="condominios.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold" style="transition-delay: 200ms;">Condomínios</a>
+            <a href="escritorio.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold" style="transition-delay: 300ms;">O Escritório</a>
+            <div class="w-8 h-px bg-white/10 my-2"></div>
+            <a href="contato.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 bg-brand-gold text-white px-10 py-4 text-sm font-sans font-bold tracking-widest hover:bg-brand-goldHover transition-colors" style="transition-delay: 400ms;">Contato</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-12 flex flex-col items-center gap-4 opacity-0 transition-all duration-1000 delay-500" id="menu-footer">
+            <a href="https://wa.me/551152000494" target="_blank" class="flex items-center gap-3 text-brand-gold font-bold tracking-widest">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                +55 11 5200-0494
+            </a>
+            <span class="text-[10px] tracking-[0.3em] text-white/30 uppercase">São Paulo - SP</span>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLogo = document.getElementById('menu-logo');
+        const menuFooter = document.getElementById('menu-footer');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        function openMenu() {
+            mobileMenu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+            document.body.classList.add('overflow-hidden');
+            
+            // Trigger animations
+            setTimeout(() => {
+                menuLogo.classList.remove('opacity-0', 'translate-y-4');
+                menuFooter.classList.remove('opacity-0');
+                menuLinks.forEach(link => {
+                    link.classList.remove('opacity-0', 'translate-y-4');
+                });
+            }, 50);
+        }
+
+        function closeMenu() {
+            // Reset animations
+            menuLogo.classList.add('opacity-0', 'translate-y-4');
+            menuFooter.classList.add('opacity-0');
+            menuLinks.forEach(link => {
+                link.classList.add('opacity-0', 'translate-y-4');
+            });
+
+            setTimeout(() => {
+                mobileMenu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+                document.body.classList.remove('overflow-hidden');
+            }, 400);
+        }
+
+        if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', openMenu);
+            closeMenuBtn.addEventListener('click', closeMenu);
+
+            menuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        }
+    </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/551152000494" target="_blank" class="fixed bottom-8 right-8 z-[90] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-full mr-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-xl border border-gray-100">
+            Fale conosco no WhatsApp
+        </span>
+    </a>
+</body>
+</html>

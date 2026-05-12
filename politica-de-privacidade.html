@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Alves Magalhães Advogados</title>
+    <meta name="description" content="Política de Privacidade do escritório Alves Magalhães Advogados. Saiba como tratamos suas informações pessoais com segurança e transparência.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A1426',
+                            primary: '#13233F',
+                            gold: '#C5A880',
+                            goldHover: '#B0936A',
+                            lightBg: '#F8F9FA',
+                            grayText: '#5A6473'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .page-hero {
+            background-image:
+                linear-gradient(to bottom, rgba(10,20,38,0.72) 0%, rgba(10,20,38,0.90) 100%),
+                url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=85&w=2400&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .prose h2 { 
+            font-family: 'Playfair Display', serif;
+            color: #0A1426;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .prose h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background-color: #C5A880;
+            display: block;
+        }
+        .prose p {
+            color: #5A6473;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        .prose strong {
+            color: #0A1426;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white selection:bg-brand-gold selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-brand-dark/95 backdrop-blur-sm text-white fixed w-full z-50 border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center gap-4 cursor-pointer group">
+                    <div class="w-12 h-12 flex items-center justify-center font-heading font-bold text-xl border border-brand-gold text-brand-gold group-hover:bg-brand-gold group-hover:text-white transition-all duration-500">AM</div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-semibold text-lg tracking-wide">Alves Magalhães</span>
+                        <span class="text-[10px] tracking-[0.35em] text-brand-gold uppercase font-medium">Advogados</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-widest uppercase">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Home</a>
+                    <a href="atuacao.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Atuação</a>
+                    <a href="condominios.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Condomínios</a>
+                    <a href="escritorio.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">O Escritório</a>
+                    <a href="contato.html" class="text-gray-300 hover:text-brand-gold transition-colors duration-300 pb-1">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brand-gold focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero w-full relative flex items-end pt-24" style="min-height: 40vh;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pb-16 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start gap-4 mb-5">
+                <div class="w-12 h-[1px] bg-brand-gold"></div>
+                <span class="text-brand-gold uppercase tracking-[0.3em] text-xs font-semibold">Transparência e Segurança</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-heading font-medium text-white leading-tight mb-4">
+                Política de<br><em class="not-italic text-brand-gold">Privacidade</em>
+            </h1>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose max-w-none">
+                
+                <h2 id="secao-1">SEÇÃO 1 – O QUE FAREMOS COM ESTA INFORMAÇÃO?</h2>
+                <p>Quando você preenche algum formulário, como parte do processo de cadastro para o recebimento de conteúdos gratuitos, formulários de contato ou contratação de serviços, coletamos as informações pessoais que você nos fornece, tais como nome, e-mail, telefone e endereço.</p>
+                <p>Quando você acessa nosso site, também recebemos automaticamente o protocolo de internet do seu computador, endereço de IP, a fim de obter informações que nos ajudam a aprender sobre seu navegador e sistema operacional.</p>
+                <p>E-mail Marketing será realizado apenas caso você permita. Nestes e-mails você poderá receber notícias sobre nosso escritório e outras atualizações.</p>
+
+                <h2 id="secao-2">SEÇÃO 2 – CONSENTIMENTO</h2>
+                <p><strong>Como vocês obtêm meu consentimento?</strong></p>
+                <p>O consentimento é obtido quando você fornece informações pessoais como nome, e-mail, telefone e endereço, para enviar uma mensagem, completar um cadastro ou fazer um pedido. Após a realização de ações, entendemos que você está de acordo com a coleta de dados para serem utilizados por nosso escritório.</p>
+                <p>Se pedimos por suas informações pessoais por uma razão secundária, como marketing, entendemos que você concorda em receber nossas comunicações.</p>
+                <p><strong>E caso queira retirar o consentimento, como proceder?</strong></p>
+                <p>Se após nos fornecer seus dados, você mudar de ideia, pode retirar o seu consentimento a qualquer momento, entrando em contato conosco em <a href="mailto:contato@alvesmagalhaes.com.br" class="text-brand-gold hover:underline">contato@alvesmagalhaes.com.br</a> ou nos enviando uma correspondência em: Avenida Marquês de São Vicente, 230, 18º andar, Barra Funda, São Paulo / SP – CEP: 01139-000</p>
+
+                <h2 id="secao-3">SEÇÃO 3 – DIVULGAÇÃO</h2>
+                <p>Podemos divulgar suas informações pessoais caso sejamos obrigados por determinação judicial ou caso você viole os Termos de Uso dos nossos sites e serviços de comunicação de apoio.</p>
+
+                <h2 id="secao-4">SEÇÃO 4 – SERVIÇOS DE TERCEIROS</h2>
+                <p>No geral, os fornecedores terceirizados usados por nós irão apenas coletar, usar e divulgar suas informações na medida do necessário para permitir que eles realizem os serviços que eles nos fornecem.</p>
+                <p>Uma vez que você deixe o nosso site ou seja redirecionado para um aplicativo ou site de terceiros, você não será mais regido por essa Política de Privacidade ou pelos Termos de Serviço do nosso site.</p>
+                <p><strong>Links de Terceiros</strong></p>
+                <p>Quando você clica em links em nosso site, eles podem direcioná-lo para fora do nosso site. Não somos responsáveis pelas práticas de privacidade de outros sites e o incentivamos a ler as declarações de privacidade deles.</p>
+
+                <h2 id="secao-5">SEÇÃO 5 – SEGURANÇA</h2>
+                <p>Para proteger suas informações pessoais, tomamos precauções razoáveis e seguimos as melhores práticas da indústria para nos certificar que elas não serão perdidas inadequadamente, usurpadas, acessadas, divulgadas, alteradas ou destruídas.</p>
+
+                <h2 id="secao-6">SEÇÃO 6 – DIREITOS DO TITULAR DE DADOS</h2>
+                <p>O Alves Magalhães respeita a sua privacidade e preocupa-se em disponibilizar os canais necessários para que você possa exercer os seus direitos e ter informações adequadas, claras e transparentes sobre o uso e o tratamento dos seus Dados Pessoais. Desse modo, a solicitação de alteração de dados incompletos, inexatos ou desatualizados e/ou de exclusão de dados fornecidos ao Alves Magalhães, inclusive Dados Pessoais, deverá ser realizada por e-mail direcionado ao <a href="mailto:contato@alvesmagalhaes.com.br" class="text-brand-gold hover:underline">contato@alvesmagalhaes.com.br</a></p>
+
+                <h2 id="secao-7">SEÇÃO 7 – ALTERAÇÕES PARA ESSA POLÍTICA DE PRIVACIDADE</h2>
+                <p>Reservamos o direito de modificar essa política de privacidade a qualquer momento, então, por favor, revise-a com frequência. Alterações e esclarecimentos vão surtir efeito imediatamente após sua publicação no site. Se fizermos alterações de materiais para essa política, iremos notificá-lo que houve atualização, para que você tenha ciência sobre quais informações coletamos, como as usamos e sob que circunstâncias (se alguma) as usamos e/ou divulgamos.</p>
+                <p>Se nosso escritório for adquirido ou fundido com outro, suas informações podem ser transferidas para os novos proprietários para que possamos continuar a realizar transações para você.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-gray-300 pt-20 pb-10 border-t-4 border-brand-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:pr-6">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-10 h-10 flex items-center justify-center font-heading font-bold text-lg border border-brand-gold text-brand-gold">AM</div>
+                        <div class="flex flex-col">
+                            <span class="font-heading font-semibold text-white tracking-wide">Alves Magalhães</span>
+                            <span class="text-[9px] tracking-[0.3em] text-gray-400 uppercase">Advogados</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light mb-8 leading-relaxed">Assessoria jurídica estratégica pautada na ética, técnica e excelência.</p>
+                    <div class="flex items-start gap-4 text-sm font-light">
+                        <i class="fa-solid fa-location-dot mt-1 text-brand-gold"></i>
+                        <p class="leading-relaxed">Rua do Bosque, 1484<br>3º andar, sala 312 - Barra Funda<br>São Paulo - SP</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Áreas de Atuação</h4>
+                    <ul class="space-y-4 text-sm font-light text-gray-400">
+                        <li><a href="direito-do-trabalho.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito do Trabalho</a></li>
+                        <li><a href="direito-previdenciario.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito Previdenciário</a></li>
+                        <li><a href="empresas-e-corporacoes.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Empresas e Corporações</a></li>
+                        <li><a href="direito-imobiliario.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Direito Imobiliário</a></li>
+                        <li><a href="direito-de-familia-e-sucessoes.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Família e Sucessões</a></li>
+                        <li><a href="condominios.html" class="hover:text-brand-gold transition-colors flex items-center gap-2"><span class="text-brand-gold text-xs">―</span> Condomínios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Escritório</h4>
+                    <ul class="space-y-4 text-sm font-light text-gray-400">
+                        <li><a href="escritorio.html" class="hover:text-brand-gold transition-colors">Sobre Nós</a></li>
+                        <li><a href="escritorio.html" class="hover:text-brand-gold transition-colors">Nossa Equipe</a></li>
+                        <li><a href="contato.html" class="hover:text-brand-gold transition-colors">Trabalhe Conosco</a></li>
+                        <li class="pt-4 mt-4 border-t border-white/10"><a href="politica-de-privacidade.html" class="text-white">Política de Privacidade</a></li>
+                        <li><a href="termos-de-uso.html" class="hover:text-white transition-colors">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-heading font-semibold tracking-wider text-lg mb-8">Contato</h4>
+                    <a href="https://wa.me/551152000494" target="_blank" class="group flex items-center bg-white/5 border border-white/10 hover:border-brand-gold transition-all duration-300 mb-6">
+                        <div class="bg-brand-gold text-white p-4 flex items-center justify-center"><i class="fa-brands fa-whatsapp text-xl"></i></div>
+                        <span class="px-5 py-3 text-white font-semibold tracking-wider group-hover:text-brand-gold transition-colors">+55 11 5200-0494</span>
+                    </a>
+                    <div class="flex items-center gap-4 text-sm font-light text-gray-400 mb-8">
+                        <i class="fa-regular fa-envelope text-brand-gold text-lg"></i>
+                        <a href="mailto:contato@alvesmagalhaes.com.br" class="hover:text-white transition-colors break-all">contato@alvesmagalhaes.com.br</a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/alves-magalh%C3%A3es-advogados?originalSubdomain=br" target="_blank" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/alvesmagalhaesadv?igsh=ZWRtNGIwd2Y0bW9u" target="_blank" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 border border-white/20 text-gray-300 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-white transition-all rounded-sm"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light text-gray-500">
+                <p>Copyright © 2024 Alves Magalhães Advogados. Todos os direitos reservados.</p>
+                <p>OAB/SP 123.456</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#0A1426] z-[100] flex flex-col items-center justify-center transition-all duration-500 opacity-0 invisible pointer-events-none backdrop-blur-md">
+        <!-- Close Button -->
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-brand-gold transition-colors p-4">
+            <i class="fas fa-times text-3xl"></i>
+        </button>
+
+        <!-- Logo -->
+        <div class="mb-16 flex flex-col items-center gap-3 opacity-0 translate-y-4 transition-all duration-700" id="menu-logo">
+            <div class="w-14 h-14 flex items-center justify-center font-heading font-bold text-2xl border border-brand-gold text-brand-gold">
+                AM
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="font-heading font-semibold text-white text-lg tracking-widest uppercase">Alves Magalhães</span>
+                <span class="text-[9px] tracking-[0.4em] text-brand-gold uppercase font-medium">Advogados</span>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-col items-center gap-8 text-xl font-heading tracking-[0.25em] uppercase text-white">
+            <a href="index.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold">Home</a>
+            <a href="atuacao.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold" style="transition-delay: 100ms;">Atuação</a>
+            <a href="condominios.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold" style="transition-delay: 200ms;">Condomínios</a>
+            <a href="escritorio.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 hover:text-brand-gold" style="transition-delay: 300ms;">O Escritório</a>
+            <div class="w-8 h-px bg-white/10 my-2"></div>
+            <a href="contato.html" class="menu-link opacity-0 translate-y-4 transition-all duration-500 bg-brand-gold text-white px-10 py-4 text-sm font-sans font-bold tracking-widest hover:bg-brand-goldHover transition-colors" style="transition-delay: 400ms;">Contato</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-12 flex flex-col items-center gap-4 opacity-0 transition-all duration-1000 delay-500" id="menu-footer">
+            <a href="https://wa.me/551152000494" target="_blank" class="flex items-center gap-3 text-brand-gold font-bold tracking-widest">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                +55 11 5200-0494
+            </a>
+            <span class="text-[10px] tracking-[0.3em] text-white/30 uppercase">São Paulo - SP</span>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLogo = document.getElementById('menu-logo');
+        const menuFooter = document.getElementById('menu-footer');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        function openMenu() {
+            mobileMenu.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+            document.body.classList.add('overflow-hidden');
+            
+            // Trigger animations
+            setTimeout(() => {
+                menuLogo.classList.remove('opacity-0', 'translate-y-4');
+                menuFooter.classList.remove('opacity-0');
+                menuLinks.forEach(link => {
+                    link.classList.remove('opacity-0', 'translate-y-4');
+                });
+            }, 50);
+        }
+
+        function closeMenu() {
+            // Reset animations
+            menuLogo.classList.add('opacity-0', 'translate-y-4');
+            menuFooter.classList.add('opacity-0');
+            menuLinks.forEach(link => {
+                link.classList.add('opacity-0', 'translate-y-4');
+            });
+
+            setTimeout(() => {
+                mobileMenu.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+                document.body.classList.remove('overflow-hidden');
+            }, 400);
+        }
+
+        if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', openMenu);
+            closeMenuBtn.addEventListener('click', closeMenu);
+
+            menuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        }
+    </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/551152000494" target="_blank" class="fixed bottom-8 right-8 z-[90] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-full mr-4 bg-white text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-xl border border-gray-100">
+            Fale conosco no WhatsApp
+        </span>
+    </a>
+</body>
+</html>
